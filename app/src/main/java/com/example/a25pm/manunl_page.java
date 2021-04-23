@@ -34,7 +34,7 @@ public class manunl_page extends AppCompatActivity {
         Auto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Auto_page.class);
+                Intent intent = new Intent(getApplicationContext(), Auto.class);
                 startActivity(intent);
             }
         });

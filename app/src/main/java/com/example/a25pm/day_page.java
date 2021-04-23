@@ -21,18 +21,15 @@ public class day_page extends AppCompatActivity {
         Night = (Button)findViewById(R.id.button10);
         Manunl = (Button)findViewById(R.id.button11);
 
-        Power.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Off_page.class);
-                startActivity(intent);
-            }
+        Power.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),Off_page.class);
+            startActivity(intent);
         });
 
         Auto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Auto_page.class);
+                Intent intent = new Intent(getApplicationContext(), Auto.class);
                 startActivity(intent);
             }
         });

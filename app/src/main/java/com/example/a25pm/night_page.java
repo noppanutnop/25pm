@@ -24,7 +24,7 @@ public class night_page extends AppCompatActivity {
         });
 
         Auto.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), Auto_page.class);
+            Intent intent = new Intent(getApplicationContext(), Auto.class);
             startActivity(intent);
         });
 
