@@ -1,8 +1,11 @@
-package com.example.a25pm
+package com.example.a25pm.page
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import com.example.a25pm.AirRepository
+import com.example.a25pm.R
 import kotlinx.android.synthetic.main.activity_auto_page.*
 
 class Auto : AppCompatActivity() {
@@ -11,8 +14,15 @@ class Auto : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auto_page)
 
-        button12?.setOnClickListener {
-            val intent = Intent(applicationContext, Off_page::class.java)
+        AirRepository().getResponse { data ->
+            textViewHumidity.text = data.humidity
+            textViewTemp.text = data.temperature
+            textViewPM25.text = data.pm25
+            textViewRemain.text = data.remain
+        }
+
+        buttonPower?.setOnClickListener {
+            val intent = Intent(applicationContext, Off::class.java)
             startActivity(intent)
         }
 
@@ -22,13 +32,14 @@ class Auto : AppCompatActivity() {
         }
 
         button14?.setOnClickListener {
-            val intent = Intent(applicationContext, night_page::class.java)
+            val intent = Intent(applicationContext, Night::class.java)
             startActivity(intent)
         }
 
         button15?.setOnClickListener {
-            val intent = Intent(applicationContext, manunl_page::class.java)
+            val intent = Intent(applicationContext, Manual::class.java)
             startActivity(intent)
         }
     }
+
 }

@@ -1,12 +1,14 @@
-package com.example.a25pm;
+package com.example.a25pm.page;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class Off_page extends AppCompatActivity {
+import com.example.a25pm.R;
+
+public class Off extends AppCompatActivity {
 
 
     Button day,auto,Power,Manual;
@@ -24,7 +26,7 @@ public class Off_page extends AppCompatActivity {
         day.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),day_page.class);
+                Intent intent = new Intent(getApplicationContext(), Day.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +42,7 @@ public class Off_page extends AppCompatActivity {
         Power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Off_page.class);
+                Intent intent = new Intent(getApplicationContext(), Off.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +50,7 @@ public class Off_page extends AppCompatActivity {
         Manual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),manunl_page.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.a25pm.page.Manual.class);
                 startActivity(intent);
             }
         });

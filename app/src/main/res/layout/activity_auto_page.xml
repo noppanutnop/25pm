@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Auto">
+    tools:context=".page.Auto">
 
     <ImageView
         android:id="@+id/imageView27"
@@ -19,10 +19,10 @@
         app:srcCompat="@drawable/bgg" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textViewRemain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="99"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="normal|bold"
@@ -34,10 +34,10 @@
         app:layout_constraintVertical_bias="0.665" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textViewTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="26"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="normal|bold"
@@ -72,10 +72,10 @@
         app:srcCompat="@drawable/www" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textViewHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="61"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="normal|bold"
@@ -87,58 +87,30 @@
         app:layout_constraintVertical_bias="0.734" />
 
     <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="173dp"
-        android:layout_height="243dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077"
-        app:srcCompat="@drawable/estt" />
-
-    <ImageView
         android:id="@+id/imageView22"
         android:layout_width="285dp"
         android:layout_height="607dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.233"
         app:srcCompat="@drawable/est" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewPM25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="37"
+        android:text="0"
         android:textColor="#FFC107"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.438" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="40"
-        android:textColor="#FFC107"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.794"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237" />
 
     <ImageView
         android:id="@+id/imageView23"
@@ -176,7 +148,7 @@
         app:srcCompat="@drawable/fil" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/buttonPower"
         android:layout_width="75dp"
         android:layout_height="71dp"
         android:foreground="@drawable/powerr"
@@ -224,4 +196,4 @@
         app:layout_constraintHorizontal_bias="0.951"
         app:layout_constraintStart_toStartOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

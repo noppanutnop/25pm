@@ -1,32 +1,34 @@
-package com.example.a25pm;
+package com.example.a25pm.page;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class manunl_page extends AppCompatActivity {
+import com.example.a25pm.R;
 
-    Button Power,Auto,Night,Manual;
+public class Manual extends AppCompatActivity {
+
+    Button Power, Auto, Night, Manual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manunl_page);
 
-        Power=(Button)findViewById(R.id.button20);
+        Power = (Button) findViewById(R.id.button20);
 
-        Auto=(Button)findViewById(R.id.button21);
+        Auto = (Button) findViewById(R.id.button21);
 
-        Night=(Button)findViewById(R.id.button22);
+        Night = (Button) findViewById(R.id.button22);
 
-        Manual=(Button)findViewById(R.id.button23);
+        Manual = (Button) findViewById(R.id.button23);
 
         Power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Off_page.class);
+                Intent intent = new Intent(getApplicationContext(), Off.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +36,7 @@ public class manunl_page extends AppCompatActivity {
         Auto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Auto.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.a25pm.page.Auto.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +44,7 @@ public class manunl_page extends AppCompatActivity {
         Night.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),night_page.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.a25pm.page.Night.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +52,7 @@ public class manunl_page extends AppCompatActivity {
         Manual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),manunl_page.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.a25pm.page.Manual.class);
                 startActivity(intent);
             }
         });
