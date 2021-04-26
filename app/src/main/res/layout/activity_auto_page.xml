@@ -89,7 +89,8 @@
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="285dp"
-        android:layout_height="607dp"
+        android:layout_height="500dp"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
